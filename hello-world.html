@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hello, World!</title>
+  <style>
+    :root {
+      --bg: #f5f7fa;
+      --text: #0f172a;
+      --muted: #536074;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #101826;
+        --text: #e8eef7;
+        --muted: #97a3b6;
+      }
+    }
+
+    * { box-sizing: border-box; }
+
+    html, body {
+      height: 100%;
+      margin: 0;
+    }
+
+    body {
+      display: grid;
+      place-items: center;
+      padding: 1.5rem;
+      background: var(--bg);
+      color: var(--text);
+      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0 0 0.75rem;
+      font-size: clamp(2.5rem, 12vw, 6rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      line-height: 1.05;
+    }
+
+    p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 1.125rem;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <h1>Hello, World!</h1>
+    <p>Edit this file to make it your own.</p>
+  </main>
+</body>
+</html>
